@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbuns do harry</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .header {
+        background-color: #0000005a;
+        color: black;
+        padding: 1vw;
+        border-radius: 10px;
+    }
+
+    .item {
+        background-color: #514f4f65;
+        border-radius: 15px;
+        margin: 2vw;
+    }
+
+    .footer {
+        background-color: #ffffff69;
+        color: black;
+        padding: 2vw;
+        font-size: 15px;
+    }
+/* pequeno */
+    .garden {
+        padding: 2vw;
+        margin: 5vw;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    body{
+        background-color: rgb(94, 188, 255);
+        color: rgb(0, 0, 255)
+    }
+/* medio */
+    @media only screen and (min-width:601px) {
+        .garden {
+            grid-template-columns: 50% 50%;
+        }
+        body {
+            background-color: rgb(94, 255, 153);
+            color: rgb(0, 255, 0);
+        }
+    }
+/* grande */
+    @media only screen and (min-width:900px) {
+        .garden {
+            grid-template-columns: 33.33% 33.33% 33.33%;
+        }
+        body{
+            background-color: #bebbbb;
+            color: black;
+        }
+    }
+
+    .garden::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <h1>Albums do Harry Styles</h1>
+    </div>
+    <div class="garden">
+        <div class="item">
+            <h1><a href="https://youtu.be/5hxYIOtzG4s">Harry Styles</a></h1>
+            <p>Álbum de estreia do cantor lançado em 2017, contando com 10 músicas. Turne chamada: Liv on Tour em 2017.
+            </p>
+        </div>
+        <div class="item">
+            <h1><a href="https://youtu.be/wWGycPXelLs">Fine Line</a></h1>
+            <p>Álbum lançado em 2019, contando com 12 músicas. Turne: Love on Tour em 2020 adiada para 2021.</p>
+        </div>
+        <div class="item">
+            <h1><a href="https://youtu.be/xsu0829oQbc">Harry's House</a></h1>
+            <p>Álbum lançado em 2022, contando com 13 músicas. Turne: Love on Tour em 2022 (junta com a outra por conta
+                da pandemia) </p>
+        </div>
+       
+    </div>
+    <div class="footer">
+        <p>Obrigada por acessar o site para entrar em contato: natalia.archanjo1@gmail.com</p>
+    </div>
+</body>
+
+</html>
